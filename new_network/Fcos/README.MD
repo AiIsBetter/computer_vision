@@ -1,0 +1,8 @@
+数据的读取框架和RefineDet中使用的一致，用代码复现了fcos的论文，不过目前还没调整好，只是可以训练和使用。代码上面除了编写fcos相关的内容，也把之前refinedet相对混乱的工程整理了下，之前一些参数也是写死的，没有写成可配置的选项，不好修改，另一方面训练过程中也没把结果可视化，调试时效率不高。这个工程把参数都整理了一遍，另外编写了keras自定义的callback调用tensorboard显示测试图片识别结果，有问题就可以早发现。
+目前整理了一部分模型相关的文件，还有些工具函数和配置文件整理好以后再上传。训练数据格式和refinedet相同即可，只测试了自己的数据集，voc这些应该也可以使用。
+
+引用
+1.https://github.com/DetectionTeamUCAS/FCOS_Tensorflow
+2.https://github.com/pierluigiferrari/ssd_keras
+
+
